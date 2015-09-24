@@ -1,0 +1,11 @@
+name 'dfdevm_docker_maven'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures dfdevm_docker_maven'
+long_description 'Installs/Configures dfdevm_docker_maven'
+version '0.1.0'
+
+depends 'df_docker'
+depends 'java'
+depends 'df_maven'

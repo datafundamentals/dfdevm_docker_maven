@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+  synced_folders: 
+  - ["~/shuttle","/home/vagrant/shuttle"]
+  - ["~/work/docker_maven","/home/vagrant/docker_maven"]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-7.1
+    network:
+    - ["private_network", {ip: "192.168.33.47"}]
+
+suites:
+  - name: default
+    run_list:
+      - recipe[dfdevm_docker_maven::default]
+    attributes:
