@@ -11,7 +11,7 @@ provisioner:
 platforms:
   - name: centos-7.1
     network:
-    - ["private_network", {ip: "192.168.33.47"}]
+    - ["private_network", {ip: "192.168.33.55"}]
 
 suites:
   - name: default
